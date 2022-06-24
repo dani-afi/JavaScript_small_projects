@@ -245,10 +245,114 @@ dataa=[[18,20],[45,2],[61,12],[37,6],[21,21],[78,9]]
 //   return s.repeat(n);
 // }
  
-function stringToArray(string){
+// function stringToArray(string){
 
-	return string.split(" ")
+// 	return string.split(" ")
 
-}
+// }
 
-const a=(s)=>s.split(' ');
+// const a=(s)=>s.split(' ');
+// <p>
+// </p>
+
+// function maps(x){
+// 	let a=[]
+// 	  for(let i=0;i<x.length;i++){
+// 		  a[i]= x[i]*2
+		  
+// 	  } return a
+// 	}
+  
+// function maps(x){
+// 	return x.map(n=> n * 2);
+//   }
+//   console.log(maps([1,2,3]))
+
+
+
+// function maps(x){
+// 	return x.map(n => n * 2);
+//   }
+
+// function hero(bullets, dragons){
+  
+// 	if (bullets>=dragons*2){
+// 	  return true
+// 	} else {
+// 	  return false
+// 	}
+//    }
+ 
+// function hero(bullets, dragons){
+// 	return bullets >= dragons * 2
+//   }
+
+
+// const hero=(bullets,dragons)=> bullets >= dragons * 2;
+// console.log(hero(10,5))
+
+// function arrayPlusArray(arr1, arr2) {
+// 	return [...arr1,...arr2].reduce((prev,el)=>prev+=el)
+//   }
+
+// function arrayPlusArray(...arrays) {
+// 	return [].concat(...arrays).reduce((a,b) => a+b,0)
+//   }
+
+//   console.log(arrayPlusArray([1,2,3],[4,5,6],[7,8,9]))
+
+// function century(year) {
+//     return Math.floor((year + 99) / 100);
+// }
+
+// console.log(century(1901))
+
+// var humanYearsCatYearsDogYears = function(y) {
+// 	if (y == 1) return [1, 15, 15]
+// 	if (y == 2) return [2, 24, 24]
+// 	return [y, (y-2) * 4 + 24, (y-2) * 5 + 24]
+//   }
+// const points=games=>games.reduce((output,current)=>{
+//     return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
+//   },0)
+
+//   console.log(points(['1:0','2:0','3:0','4:0','2:1','1:3','1:4','2:3','2:4','3:4']))
+
+//Prime Numbers
+
+// function isPrime(num) {
+//   for (let i = 2; i * i <= num; i++)
+  
+//       if (num % i === 0)
+      
+//         return false; 
+//   return num > 1;
+// }
+
+// console.log(isPrime(9))
+
+// var countBits = function(n) {
+
+//   n=[...n.toString(2)]
+//   console.log(n)
+//   let count =0
+//   for(let i=0;i<n.length;i++){
+//     if(n[i]==1){
+//       count++
+//     }
+  
+//   }return count
+// }
+//   console.log(countBits(0))
+
+//   //sau asa
+//   countBits = n => n.toString(2).split('0').join('').length;
+let a=12;
+a=13
+const b=12
+// b=20
+// console.log(a)
+
+var e=12
+e=15
+console.log(e)
