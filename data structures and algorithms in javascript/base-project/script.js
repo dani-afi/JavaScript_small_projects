@@ -347,12 +347,52 @@ dataa=[[18,20],[45,2],[61,12],[37,6],[21,21],[78,9]]
 
 //   //sau asa
 //   countBits = n => n.toString(2).split('0').join('').length;
-let a=12;
-a=13
-const b=12
-// b=20
-// console.log(a)
 
-var e=12
-e=15
-console.log(e)
+
+
+
+
+
+
+// function zero(func)   { return func ? func(0) : 0; };
+// function one(func)    { return func ? func(1) : 1; };
+// function two(func)    { return func ? func(2) : 2; };
+// function three(func)  { return func ? func(3) : 3; };
+// function four(func)   { return func ? func(4) : 4; };
+// function five(func)   { return func ? func(5) : 5; };
+// function six(func)    { return func ? func(6) : 6; };
+// function seven(func)  { return func ? func(7) : 7; };
+// function eight(func)  { return func ? func(8) : 8; };
+// function nine(func)   { return func ? func(9) : 9; };
+
+// function plus( b )      { return function( a ) { return a + b; }; };
+// function minus( b )     { return function( a ) { return a - b; }; };
+// function times( b )     { return function( a ) { return Math.floor(a * b); }; };
+// function dividedBy( b ) { return function( a ) { return Math.floor(a / b); }; };
+
+
+// console.log(four())
+// console.log(four(plus()))
+
+// console.log(four(plus(nine())));
+// console.log(six(dividedBy(two())));
+
+
+let a=[]
+let c=0
+let b=(el,el1)=>el+el1
+function digital_root(n) {
+ if(n.length=1){
+   return n} else{
+     a.push(n.split(''))
+            
+   }for(let i=0;i<a.length;i++){
+       c+=a[i]
+     }
+     return c
+}
+
+console.log(digital_root(16))
+
+q=14
+console.log(q.length)
