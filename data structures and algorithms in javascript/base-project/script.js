@@ -377,22 +377,134 @@ dataa=[[18,20],[45,2],[61,12],[37,6],[21,21],[78,9]]
 // console.log(four(plus(nine())));
 // console.log(six(dividedBy(two())));
 
+// function digital_root(n) {
+//   if(n<10){return n}else{
+//   let a=n=>Number(n)
+//   let b=Array.from(String(n),a).reduce((el,el1)=>el+el1,0)
+//   return b
+//   }}
 
-let a=[]
-let c=0
-let b=(el,el1)=>el+el1
-function digital_root(n) {
- if(n.length=1){
-   return n} else{
-     a.push(n.split(''))
-            
-   }for(let i=0;i<a.length;i++){
-       c+=a[i]
-     }
-     return c
-}
 
-console.log(digital_root(16))
+// console.log(digital_root(1))
 
-q=14
-console.log(q.length)
+// a=124654567547773354
+// console.log((a-1)%9+1)
+
+
+
+// function digital_root(n) {
+//   if (n < 10) return n;
+  
+//   return digital_root(
+//     n.toString().split('').reduce(function(acc, d) { return acc + +d; }, 0));
+// }
+
+// var uniqueInOrder=function(iterable){
+//   let a=[]
+//   iterable=[...iterable]
+  
+//   for(let i=0;i<iterable.length;i++){
+    
+    
+    
+//     if(a.includes(iterable[i])){
+      
+//     }else{a.push(iterable[i])}
+//   }return a
+// }
+
+// console.log(uniqueInOrder('AAAABBBCCDAABBB'))
+
+
+// var uniqueInOrder=function(iterable){
+//   let a=[]
+//   iterable=[...iterable]
+//   for(i=0;i<iterable.length;i++){
+//     if(a.length===0){
+//       a.push(iterable[0])
+//     } else{
+//       if(iterable[i]===iterable[i-1]){
+
+//       }else{a.push(iterable[i])}
+//     }
+//   }return a
+// }
+
+// console.log(uniqueInOrder('AAAABBBCCDAABBB'))
+
+
+// var uniqueInOrder=function(iterable){
+//   return [...iterable].filter((a, i) => a !== iterable[i-1])
+// }
+// Build a pyramid-shaped tower given a positive integer number of floors. A tower block is represented with "*" character.
+// let l=10
+// let a=[]
+// let pyramid =function(star){
+    
+    
+//     let s='*'
+//     for(let i=1;i<star;i++){
+//         if(star===0){
+
+//         }else{
+//            a[0]='*'
+//            a[i]=a[i-1]+'**'
+           
+           
+//         }
+        
+//     }return a
+
+    
+   
+    
+// }
+
+// let pyramidFinal=function(x){
+//     let b=[...x]
+//     let c=[]
+//     let d=' '
+//     for(let i=0;i<b.length;i++){
+//         c[i]=d.repeat((b[b.length-1].length-b[i].length)/2)+a[i]+d.repeat((b[b.length-1].length-b[i].length)/2)
+        
+//     } return c
+
+// }
+
+
+
+// pyramid(l).join('\r\n')
+// let final=[...a]
+
+// console.log(pyramidFinal(final).join('\n\r'))
+// let p=[]
+// let st='|'
+// let rr=' '
+// let root=function(star){
+//     for(let i=0;i<=star/2;i++){
+//     if(star>=10){
+//         p[i]=rr.repeat((a[a.length-1].length-1)/3)+st.repeat((a[a.length-1].length-1)/3)+rr.repeat((a[a.length-1].length-1)/3)
+//     }} return p
+// }
+
+// console.log(root(l).join('\n\r'))
+
+
+///////////////////////////////////////////
+
+//Given an array (arr) as an argument complete the function countSmileys that should return the total number of smiling faces.
+let a=[':D',':~)',';~D',':)']
+// let b=[]
+// const countSmileys=((el,el1)=>el+=el1)
+    
+     
+// console.log(countSmileys(a))
+let y=""
+console.log(typeof(y))
+function countSmileys(arr) {
+    for(let i=0;i<arr.length;i++){
+      y=y+arr[i]
+    }
+    }
+
+    console.log(countSmileys(a))
