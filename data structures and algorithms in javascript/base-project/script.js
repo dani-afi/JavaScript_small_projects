@@ -499,12 +499,41 @@ let a=[':D',':~)',';~D',':)']
     
      
 // console.log(countSmileys(a))
-let y=""
-console.log(typeof(y))
-function countSmileys(arr) {
-    for(let i=0;i<arr.length;i++){
-      y=y+arr[i]
-    }
+// let y=""
+// console.log(typeof(y))
+// function countSmileys(arr) {
+//     for(let i=0;i<arr.length;i++){
+//       y=y+arr[i]
+//     }
+//     }
+
+//     console.log(countSmileys(a))
+
+/////////////////////////////////////
+// A format for expressing an ordered list of integers is to use a comma separated list of either
+
+// individual integers
+// or a range of integers denoted by the starting integer separated from the end integer in the range by a dash, '-'. The range includes all integers in the interval including both endpoints. It is not considered a range unless it spans at least 3 numbers. For example "12,13,15-17"
+// Complete the solution so that it takes a list of integers in increasing order and returns a correctly formatted string in the range format.
+
+function solution(list){
+  let i=0;
+  let size=list.length-1;
+  let result =[]
+  
+  while( i<=size){
+    let j=i;
+    while(j<size && list[j]+1===list[j+1]){
+      j+=1
+    } if(j-i>=2){
+        result.push(list[i]+'' + '-'+ list[j]+'')
+        i=j+1
+    } else{
+      result.push(list[i]+'')
+      i+=1
     }
 
-    console.log(countSmileys(a))
+  }return result.join()
+}
+
+ console.log(solution([-6, -3, -2, -1, 0, 1, 3, 4, 5, 7, 8, 9, 10, 11, 14, 15, 17, 18, 19, 20]))
