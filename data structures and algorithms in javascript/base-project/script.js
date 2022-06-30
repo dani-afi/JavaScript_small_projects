@@ -516,24 +516,51 @@ let a=[':D',':~)',';~D',':)']
 // or a range of integers denoted by the starting integer separated from the end integer in the range by a dash, '-'. The range includes all integers in the interval including both endpoints. It is not considered a range unless it spans at least 3 numbers. For example "12,13,15-17"
 // Complete the solution so that it takes a list of integers in increasing order and returns a correctly formatted string in the range format.
 
-function solution(list){
-  let i=0;
-  let size=list.length-1;
-  let result =[]
+// function solution(list){
+//   let i=0;
+//   let size=list.length-1;
+//   let result =[]
   
-  while( i<=size){
-    let j=i;
-    while(j<size && list[j]+1===list[j+1]){
-      j+=1
-    } if(j-i>=2){
-        result.push(list[i]+'' + '-'+ list[j]+'')
-        i=j+1
-    } else{
-      result.push(list[i]+'')
-      i+=1
+//   while( i<=size){
+//     let j=i;
+//     while(j<size && list[j]+1===list[j+1]){
+//       j+=1
+//     } if(j-i>=2){
+//         result.push(list[i]+'' + '-'+ list[j]+'')
+//         i=j+1
+//     } else{
+//       result.push(list[i]+'')
+//       i+=1
+//     }
+
+//   }return result.join()
+// }
+
+//  console.log(solution([-6, -3, -2, -1, 0, 1, 3, 4, 5, 7, 8, 9, 10, 11, 14, 15, 17, 18, 19, 20]))
+
+/////////////////////////////////////////////////////////
+//Given an n x n array, return the array elements arranged from outermost elements to the middle element, traveling clockwise.
+
+// let aa=[[1, 2, 3, 4, 5, 6],
+//  [20, 21, 22, 23, 24, 7], 
+//  [19, 32, 33, 34, 25, 8], 
+//  [18, 31, 36, 35, 26, 9],
+//   [17, 30, 29, 28, 27, 10], 
+//   [16, 15, 14, 13, 12, 11]]
+  
+
+  const snail = (array) =>{
+    let finalArray = []
+    while(array.length){
+      finalArray.push(...array.shift())
+      for (var i = 0; i < array.length; i++){
+        finalArray.push(array[i].pop())
+      }
+      finalArray.push(...(array.pop() || []).reverse())
+      for (var i = array.length -1; i >= 0; i--){
+        finalArray.push(array[i].shift())
+      }
     }
-
-  }return result.join()
-}
-
- console.log(solution([-6, -3, -2, -1, 0, 1, 3, 4, 5, 7, 8, 9, 10, 11, 14, 15, 17, 18, 19, 20]))
+    return finalArray
+  }
+  console.log(snail(aa))
