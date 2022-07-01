@@ -1,5 +1,3 @@
-
-
 // // put letters of word into stack
 
 // let reverseWord=function(wordd){
@@ -7,8 +5,7 @@
 //     console.log(word)
 //     let letters =[];
 //     let rword='';
-    
-    
+
 //     for (let i=0;i<word.length;i++){
 //     letters.push(word[i]);
 // }
@@ -17,7 +14,7 @@
 
 // for (let i=0;i<letters.length;i++){
 //     rword+=letters.pop();
-// } 
+// }
 // console.log(rword)
 // if(word===rword){
 //     console.log(`${word} is a palidrom.`)
@@ -26,9 +23,14 @@
 // }}
 // reverseWord(`bob`);
 
-
-dataa=[[18,20],[45,2],[61,12],[37,6],[21,21],[78,9]]
-
+dataa = [
+  [18, 20],
+  [45, 2],
+  [61, 12],
+  [37, 6],
+  [21, 21],
+  [78, 9],
+];
 
 // let a=['Open','Open','Senior','Open','Open','Senior']
 // const openOrSenior=(data)=>{
@@ -56,16 +58,13 @@ dataa=[[18,20],[45,2],[61,12],[37,6],[21,21],[78,9]]
 //    for(i=0;i<l.length;i++){
 //       typeof(l[i]) ==='number' ? a.push(l[i]) : console.log(`l[i] is not a number`)
 //     }return a
-// } 
+// }
 
-    
-  
 // filter_list(q)
 
 // console.log(a);
 
-
-// // sau 
+// // sau
 // function filter_list(l) {
 //   return l.filter(function(v) {return typeof v == 'number'})
 // }
@@ -79,7 +78,6 @@ dataa=[[18,20],[45,2],[61,12],[37,6],[21,21],[78,9]]
 
 // console.log(songDecoder('  AWUBBWUBC   '))
 
-
 // let a=[19,5,42,2,77];
 // let b=[];
 
@@ -88,9 +86,6 @@ dataa=[[18,20],[45,2],[61,12],[37,6],[21,21],[78,9]]
 //     return (b[0]+b[1])
 // }
 // console.log(sumTwoSmallestNumbers(a));
-
-
-
 
 // function getPlanetName(id){
 //     var name;
@@ -120,7 +115,7 @@ dataa=[[18,20],[45,2],[61,12],[37,6],[21,21],[78,9]]
 //         name = 'Neptune'
 //         break;
 //     }
-    
+
 //     return name;
 //   }
 
@@ -133,17 +128,14 @@ dataa=[[18,20],[45,2],[61,12],[37,6],[21,21],[78,9]]
 //   return str.split('').reverse().join("");
 // }
 
-
 // console.log(solution('world'))
-
 
 // function countSheeps(arrayOfSheep) {
 //   let count =0;
 //   for (let i=0;i<arrayOfSheep.length;i++){
 //     if(arrayOfSheep[i]===true){count++}
 //   }return count
-// } 
-
+// }
 
 // let count=0
 // function getCount(str) {
@@ -158,17 +150,14 @@ dataa=[[18,20],[45,2],[61,12],[37,6],[21,21],[78,9]]
 //       console.log(b[y]+' b[i]')
 //     }
 //   }return count
-  
+
 // }
-
-
 
 // function getCount(str) {
 //   return (str.match(/[aeiou]/ig)||[]).length;
 // }
 
 // console.log(getCount("abracadabra"))
-
 
 // function isDivisible(n, x, y) {
 //   return (n%x===0 && n%y===0) ? true : false
@@ -189,7 +178,6 @@ dataa=[[18,20],[45,2],[61,12],[37,6],[21,21],[78,9]]
 //    return Math.trunc(a)
 //  }
 
-
 // const rps = (p1, p2) => {if(p1===p2){
 //   return 'Draw!'
 // } else if ( p1==='scissors' && p2==='paper'){
@@ -203,24 +191,21 @@ dataa=[[18,20],[45,2],[61,12],[37,6],[21,21],[78,9]]
 //                 else if (p1==='rock' && p2==='paper'){
 //                   return 'Player 2 won!'}
 //                    else if(p1==='rock' && p2==='scissors'){
-//                      return 'Player 1 won!'}      
+//                      return 'Player 1 won!'}
 // };
-
 
 // function removeChar(str) {
 //   return str.slice(1, -1);
 // }
 
-
-
 // console.log(removeChar('eloquent'))
 
 // count=0
 // function positiveSum(arr) {
- 
+
 //   for(let i=0;i<arr.length;i++){
 //     if(arr[i]>0){count=count+arr[i]}
-    
+
 //   }return count
 // }
 
@@ -235,16 +220,16 @@ dataa=[[18,20],[45,2],[61,12],[37,6],[21,21],[78,9]]
 //   if(n!==0){
 //   for(let i=0;i<b[0]-1;i++) {
 //     a.push(a[0])
-//   } 
+//   }
 //    return a.join('')}
 //  }
- 
+
 //  repeatStr(5, "#")
- 
+
 // function repeatStr (n, s) {
 //   return s.repeat(n);
 // }
- 
+
 // function stringToArray(string){
 
 // 	return string.split(" ")
@@ -259,34 +244,31 @@ dataa=[[18,20],[45,2],[61,12],[37,6],[21,21],[78,9]]
 // 	let a=[]
 // 	  for(let i=0;i<x.length;i++){
 // 		  a[i]= x[i]*2
-		  
+
 // 	  } return a
 // 	}
-  
+
 // function maps(x){
 // 	return x.map(n=> n * 2);
 //   }
 //   console.log(maps([1,2,3]))
-
-
 
 // function maps(x){
 // 	return x.map(n => n * 2);
 //   }
 
 // function hero(bullets, dragons){
-  
+
 // 	if (bullets>=dragons*2){
 // 	  return true
 // 	} else {
 // 	  return false
 // 	}
 //    }
- 
+
 // function hero(bullets, dragons){
 // 	return bullets >= dragons * 2
 //   }
-
 
 // const hero=(bullets,dragons)=> bullets >= dragons * 2;
 // console.log(hero(10,5))
@@ -322,10 +304,10 @@ dataa=[[18,20],[45,2],[61,12],[37,6],[21,21],[78,9]]
 
 // function isPrime(num) {
 //   for (let i = 2; i * i <= num; i++)
-  
+
 //       if (num % i === 0)
-      
-//         return false; 
+
+//         return false;
 //   return num > 1;
 // }
 
@@ -340,19 +322,13 @@ dataa=[[18,20],[45,2],[61,12],[37,6],[21,21],[78,9]]
 //     if(n[i]==1){
 //       count++
 //     }
-  
+
 //   }return count
 // }
 //   console.log(countBits(0))
 
 //   //sau asa
 //   countBits = n => n.toString(2).split('0').join('').length;
-
-
-
-
-
-
 
 // function zero(func)   { return func ? func(0) : 0; };
 // function one(func)    { return func ? func(1) : 1; };
@@ -370,7 +346,6 @@ dataa=[[18,20],[45,2],[61,12],[37,6],[21,21],[78,9]]
 // function times( b )     { return function( a ) { return Math.floor(a * b); }; };
 // function dividedBy( b ) { return function( a ) { return Math.floor(a / b); }; };
 
-
 // console.log(four())
 // console.log(four(plus()))
 
@@ -384,17 +359,14 @@ dataa=[[18,20],[45,2],[61,12],[37,6],[21,21],[78,9]]
 //   return b
 //   }}
 
-
 // console.log(digital_root(1))
 
 // a=124654567547773354
 // console.log((a-1)%9+1)
 
-
-
 // function digital_root(n) {
 //   if (n < 10) return n;
-  
+
 //   return digital_root(
 //     n.toString().split('').reduce(function(acc, d) { return acc + +d; }, 0));
 // }
@@ -402,19 +374,16 @@ dataa=[[18,20],[45,2],[61,12],[37,6],[21,21],[78,9]]
 // var uniqueInOrder=function(iterable){
 //   let a=[]
 //   iterable=[...iterable]
-  
+
 //   for(let i=0;i<iterable.length;i++){
-    
-    
-    
+
 //     if(a.includes(iterable[i])){
-      
+
 //     }else{a.push(iterable[i])}
 //   }return a
 // }
 
 // console.log(uniqueInOrder('AAAABBBCCDAABBB'))
-
 
 // var uniqueInOrder=function(iterable){
 //   let a=[]
@@ -432,7 +401,6 @@ dataa=[[18,20],[45,2],[61,12],[37,6],[21,21],[78,9]]
 
 // console.log(uniqueInOrder('AAAABBBCCDAABBB'))
 
-
 // var uniqueInOrder=function(iterable){
 //   return [...iterable].filter((a, i) => a !== iterable[i-1])
 // }
@@ -440,8 +408,7 @@ dataa=[[18,20],[45,2],[61,12],[37,6],[21,21],[78,9]]
 // let l=10
 // let a=[]
 // let pyramid =function(star){
-    
-    
+
 //     let s='*'
 //     for(let i=1;i<star;i++){
 //         if(star===0){
@@ -449,15 +416,11 @@ dataa=[[18,20],[45,2],[61,12],[37,6],[21,21],[78,9]]
 //         }else{
 //            a[0]='*'
 //            a[i]=a[i-1]+'**'
-           
-           
+
 //         }
-        
+
 //     }return a
 
-    
-   
-    
 // }
 
 // let pyramidFinal=function(x){
@@ -466,12 +429,10 @@ dataa=[[18,20],[45,2],[61,12],[37,6],[21,21],[78,9]]
 //     let d=' '
 //     for(let i=0;i<b.length;i++){
 //         c[i]=d.repeat((b[b.length-1].length-b[i].length)/2)+a[i]+d.repeat((b[b.length-1].length-b[i].length)/2)
-        
+
 //     } return c
 
 // }
-
-
 
 // pyramid(l).join('\r\n')
 // let final=[...a]
@@ -489,15 +450,13 @@ dataa=[[18,20],[45,2],[61,12],[37,6],[21,21],[78,9]]
 
 // console.log(root(l).join('\n\r'))
 
-
 ///////////////////////////////////////////
 
 //Given an array (arr) as an argument complete the function countSmileys that should return the total number of smiling faces.
-let a=[':D',':~)',';~D',':)']
+let a = [":D", ":~)", ";~D", ":)"];
 // let b=[]
 // const countSmileys=((el,el1)=>el+=el1)
-    
-     
+
 // console.log(countSmileys(a))
 // let y=""
 // console.log(typeof(y))
@@ -520,7 +479,7 @@ let a=[':D',':~)',';~D',':)']
 //   let i=0;
 //   let size=list.length-1;
 //   let result =[]
-  
+
 //   while( i<=size){
 //     let j=i;
 //     while(j<size && list[j]+1===list[j+1]){
@@ -542,25 +501,79 @@ let a=[':D',':~)',';~D',':)']
 //Given an n x n array, return the array elements arranged from outermost elements to the middle element, traveling clockwise.
 
 // let aa=[[1, 2, 3, 4, 5, 6],
-//  [20, 21, 22, 23, 24, 7], 
-//  [19, 32, 33, 34, 25, 8], 
+//  [20, 21, 22, 23, 24, 7],
+//  [19, 32, 33, 34, 25, 8],
 //  [18, 31, 36, 35, 26, 9],
-//   [17, 30, 29, 28, 27, 10], 
+//   [17, 30, 29, 28, 27, 10],
 //   [16, 15, 14, 13, 12, 11]]
-  
 
-  const snail = (array) =>{
-    let finalArray = []
-    while(array.length){
-      finalArray.push(...array.shift())
-      for (var i = 0; i < array.length; i++){
-        finalArray.push(array[i].pop())
+// const snail = (array) =>{
+//   let finalArray = []
+//   while(array.length){
+//     finalArray.push(...array.shift())
+//     for (var i = 0; i < array.length; i++){
+//       finalArray.push(array[i].pop())
+//     }
+//     finalArray.push(...(array.pop() || []).reverse())
+//     for (var i = array.length -1; i >= 0; i--){
+//       finalArray.push(array[i].shift())
+//     }
+//   }
+//   return finalArray
+// }
+// console.log(snail(aa))
+
+// var romanToInt = function (s) {
+//   const numbers = {
+//     I: 1,
+//     V: 5,
+//     X: 10,
+//     L: 50,
+//     C: 100,
+//     D: 500,
+//     M: 1000,
+//   };
+//   //console.log(numbers.I)
+
+//   let i = 0;
+//   let q = [...s];
+
+//   let size = q.length;
+//   let sum = 0;
+
+//   while (i < q.length - 1) {
+//     if (numbers[q[i]] >= numbers[q[i + 1]]) {
+//       sum += numbers[q[i]];
+//     } else if (numbers[q[i]] < numbers[q[i + 1]]) {
+//       sum = sum + (numbers[q[i + 1]] - numbers[q[i]]);
+//     }
+//     i++;
+//   }
+//   sum += numbers[q[i]];
+//   return sum;
+// };
+
+// console.log(romanToInt("MCMXCIV"));
+function cakes(recipe, available) {
+  let maxCakes
+  for (let ingredient in recipe) {
+    if (available[ingredient]) {
+      const possibleCakes = Math.floor(
+        available[ingredient] / recipe[ingredient] || 0
+      )
+      if (!maxCakes || possibleCakes < maxCakes) {
+        maxCakes = possibleCakes
       }
-      finalArray.push(...(array.pop() || []).reverse())
-      for (var i = array.length -1; i >= 0; i--){
-        finalArray.push(array[i].shift())
-      }
+    } else {
+      return 0
     }
-    return finalArray
   }
-  console.log(snail(aa))
+  return maxCakes
+}
+
+console.log(
+  cakes(
+    { flour: 500, sugar: 200, eggs: 1 },
+    { flour: 1200, sugar: 1200, eggs: 5, milk: 200 }
+  )
+);
