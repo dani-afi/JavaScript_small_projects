@@ -554,26 +554,111 @@ let a = [":D", ":~)", ";~D", ":)"];
 // };
 
 // console.log(romanToInt("MCMXCIV"));
-function cakes(recipe, available) {
-  let maxCakes
-  for (let ingredient in recipe) {
-    if (available[ingredient]) {
-      const possibleCakes = Math.floor(
-        available[ingredient] / recipe[ingredient] || 0
-      )
-      if (!maxCakes || possibleCakes < maxCakes) {
-        maxCakes = possibleCakes
-      }
-    } else {
-      return 0
-    }
+// const cakes = (needs, has) => Math.min(
+//   ...Object.keys(needs).map(key => Math.floor(has[key] / needs[key] || 0))
+// )
+// console.log(
+//   cakes(
+//     { flour: 500, sugar: 200, eggs: 1 },
+//     { flour: 1200, sugar: 1200, eggs: 5, milk: 200 }
+//   )
+// );
+
+// https://www.codewars.com/kata/551f23362ff852e2ab000037/train/javascript
+
+// function longestSlideDown1 (pyramid) {
+// let date1=performance.now()
+//   for (var i = pyramid.length - 2; i > -1; i--) {
+//     for (var j = 0; j < pyramid[i].length; j++) {
+//       pyramid[i][j] += Math.max(pyramid[i + 1][j], pyramid[i + 1][j + 1]);
+
+//     }
+//   }
+//   let date2=performance.now()
+//   let date=date2-date1
+//   console.log(date)
+//   return pyramid[0][0];
+// }
+
+// //or
+
+// function longestSlideDown2 (pyramid) {
+//   return pyramid.reduceRight((last,current)=>current.map(
+//     (v,i)=>v+Math.max(last[i],last[i+1])
+//   ))[0]
+//   console.log(last,curren);
+// }
+
+// longestSlideDown1(
+//   [[3],
+//    [7, 4],
+//    [2, 4, 6],
+//    [8, 5, 9, 3]])
+
+//    let date3=performance.now()
+//    longestSlideDown2(
+//     [[3],
+//      [7, 4],
+//      [2, 4, 6],
+//      [8, 5, 9, 3]])
+//     let date4 = performance.now()
+//     console.log(date4 - date3)
+///////////////////////////////////////////////
+// function rgb(r, g, b){
+//   let result = ''
+//   if(r<0) {
+//     r=0
+//   }
+//   if(g<0){
+//     g=0
+//   }
+//   if(b<0){
+//     b=0
+//   }
+
+//     if(r>255) {
+//     r=255
+//   }
+//   if(g>255){
+//     g=255
+//   }
+//   if(b>255){
+//     b=255
+//   }
+
+//   r = r.toString(16)
+//   g = g.toString(16)
+//   b = b.toString(16)
+//   if(r.length===1){
+//     r='0'+r
+//   }
+//   if(g.length===1){
+//     g='0'+g
+//   }
+//   if(b.length===1){
+//     b='0'+b
+//   }
+
+//   result=r+g+b
+
+//   return result.toUpperCase()
+// }
+// console.log(rgb(150,13,-2)
+
+//////////////////////////////////////////////////////
+
+function moveZeros(arr) {
+  const zeros = arr.filter((elm) => elm === 0).length;
+  const result = arr.filter((elm) => elm !== 0);
+
+  for (let i = 0; i < zeros; i += 1) {
+    result.push(0);
   }
-  return maxCakes
+
+  return result;
 }
 
-console.log(
-  cakes(
-    { flour: 500, sugar: 200, eggs: 1 },
-    { flour: 1200, sugar: 1200, eggs: 5, milk: 200 }
-  )
-);
+///sau
+var moveZeros = function (arr) {
+  return arr.filter((val) => val !== 0).concat(arr.filter((val) => val === 0));
+};
