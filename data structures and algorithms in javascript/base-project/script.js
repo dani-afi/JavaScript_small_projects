@@ -647,18 +647,76 @@ let a = [":D", ":~)", ";~D", ":)"];
 
 //////////////////////////////////////////////////////
 
-function moveZeros(arr) {
-  const zeros = arr.filter((elm) => elm === 0).length;
-  const result = arr.filter((elm) => elm !== 0);
+// function moveZeros(arr) {
+//   const zeros = arr.filter((elm) => elm === 0).length;
+//   const result = arr.filter((elm) => elm !== 0);
 
-  for (let i = 0; i < zeros; i += 1) {
-    result.push(0);
-  }
+//   for (let i = 0; i < zeros; i += 1) {
+//     result.push(0);
+//   }
 
-  return result;
-}
+//   return result;
+// }
 
-///sau
-var moveZeros = function (arr) {
-  return arr.filter((val) => val !== 0).concat(arr.filter((val) => val === 0));
-};
+// ///sau
+// var moveZeros = function (arr) {
+//   return arr.filter((val) => val !== 0).concat(arr.filter((val) => val === 0));
+// };
+/////////////////////////////////////
+//A friend of mine takes the sequence of all numbers from 1 to n (where n > 0).
+// Within that sequence, he chooses two numbers, a and b.
+
+// function removeNb (n) {
+//   let a;
+//   let b;
+//   let result = [];
+//   const gaus = sum(n);
+
+//   for(a = 1; a<=n; a++) {
+//     b = (gaus-a) / (a+1) ;
+//     if(Number.isInteger(b) && b<=n) {
+//       result.push([a,b]);
+//     }
+//   }
+//   return result;
+// }
+
+// function sum(number) {
+//   let array=[];
+//   for(i = 1; i<=number ;i++) {
+//     array.push(i);
+//   }
+//   const sums = array.reduce(function(acc,cur){
+//     return acc+cur;
+//   });
+
+//   return sums;
+// }
+
+////sau
+
+// function removeNb (n) {
+//   var results = [];
+//   for (var a = 1; a <= n; a++) {
+//     var b = (n * (n + 1) / 2 - a) / (a + 1);
+//     if (b % 1 === 0 && b <= n) results.push([a, b]);
+//   }
+//   return results;
+// }
+
+// console.log(removeNb(101))
+//////////////////////////////
+// function solveExpression(exp) {
+//   exp = exp.replace('=','==').replace('--','+');
+//   for(var i = 0; i < 10; i++){
+//     if(eval(exp.replace(/\?/g,i)) && !exp.includes(i)){
+//         if(!/^00+$/.test(exp.replace(/\?/g,i).split('==')[1]))  return i;
+//     }
+//   }
+//   return -1;
+// }
+// console.log(solveExpression("1+1=?"));
+//https://www.codewars.com/kata/546d15cebed2e10334000ed9/train/javascript
+
+// let q="1+3"
+// console.log(eval(q))
