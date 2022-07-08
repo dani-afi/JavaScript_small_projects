@@ -715,8 +715,8 @@ let a = [":D", ":~)", ";~D", ":)"];
 //   }
 //   return -1;
 // }
-// console.log(solveExpression("1+1=?"));
-//https://www.codewars.com/kata/546d15cebed2e10334000ed9/train/javascript
+console.log(solveExpression("1+1=?"));
+https://www.codewars.com/kata/546d15cebed2e10334000ed9/train/javascript
 
-// let q="1+3"
-// console.log(eval(q))
+let q="1+3"
+console.log(eval(q))
